@@ -6,22 +6,25 @@ header .container {
     height: 200px;
     padding: 40px;
     position: fixed;
-    transition: 1s;
 }
 
-div.logo {
+div.logo-wraper {
     width: 20%;
     height: 100%;
 }
 
-div.logo img {
+div.logo-wraper .logo {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 35%;
+    padding-top: 35%;
     min-width: 80px;
-    transition: 1s;
+    background-image: url('../assets/img/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 ul#header-mobile {
@@ -44,7 +47,6 @@ ul#header-desktop a {
     --is-visible: hidden; /* Criei variavel aqui, e só é disponivel para quem esta dentro dela */
     --is-opacity: 0;
     --distance: 30px;
-    transition: 1s;
     font-size: 1.2rem;
     text-decoration: none;
     color: #E3A662;
