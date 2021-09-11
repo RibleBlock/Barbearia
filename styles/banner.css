@@ -1,21 +1,44 @@
 #banner {
     width: 100%;
     height: 110%;
-    background-image: url('../assets/img/banner.png');
+    background-image: url('../assets/img/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+#banner::before {
+    display: inline-block;
+    content: "ALGUMA FRASE DAORA VAI FICAR AQUI TABOM";
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 768px){
     #banner {
         height: 100%;
+    }
+
+    #banner::before {
+        left: 10%;
     }
 }
 
 @media screen and (max-height: 400px){
     #banner {
         height: 100%;
+    }
+
+    #banner::before {
+        display: none;
     }
 }
