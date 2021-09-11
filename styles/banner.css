@@ -7,3 +7,15 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 768px){
+    #banner {
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 400px){
+    #banner {
+        height: 100%;
+    }
+}

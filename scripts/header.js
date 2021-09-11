@@ -41,11 +41,11 @@ window.addEventListener("scroll", () => {
 
         let logoAnim = logo.animate([
             {backgroundImage: "url('../assets/img/minimalist.png')"},
-            {width: '25%',paddingTop: '25%',backgroundImage: "url('../assets/img/minimalist.png')"}
+            {width: '90px',paddingTop: '90px',backgroundImage: "url('../assets/img/minimalist.png')"}
         ], timeout)
 
         logoAnim.addEventListener('finish',e => {
-            logo.style.cssText += "width: 25%;padding-top: 25%;background-image: url('../assets/img/minimalist.png')";
+            logo.style.cssText += "width: 90px;padding-top: 90px;background-image: url('../assets/img/minimalist.png')";
         })
 
         // *
@@ -86,11 +86,11 @@ window.addEventListener("scroll", () => {
 
         let logoAnim = logo.animate([
             {backgroundImage: "url('../assets/img/logo.png')"},
-            {width: '35%',paddingTop: '35%',backgroundImage: "url('../assets/img/logo.png')"}
+            {width: '125px',paddingTop: '125px',backgroundImage: "url('../assets/img/logo.png')"}
         ], timeout)
 
         logoAnim.addEventListener('finish',e => {
-            logo.style.cssText += "width: 35%;padding-top: 35%;background-image: url('../assets/img/logo.png')";
+            logo.style.cssText += "width: 125px;padding-top: 125px;background-image: url('../assets/img/logo.png')";
         })
 
         // *
