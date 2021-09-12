@@ -1,3 +1,10 @@
+:root {
+    --orange-pattern: #E3A662;
+    --orange-soft: #D0A067;
+    --black-pattern: #0A0A0A;
+    --black-soft: #141414;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +44,7 @@ main {
 #progressBar {
     position: absolute;
     will-change: transform, opacity;
-    background: linear-gradient(to top, #E3A662, #0A0A0A);
+    background: linear-gradient(to top, var(--orange-pattern), var(--black-pattern));
     transform-origin: top center;
     transform: scale(1, 0);
     opacity: 0;

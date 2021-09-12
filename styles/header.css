@@ -11,12 +11,12 @@ header .container {
     z-index: 998;
 }
 
-div.logo-wraper {
+div.logo-wrapper {
     width: 20%;
     height: 100%;
 }
 
-div.logo-wraper .logo {
+div.logo-wrapper .logo {
     position: relative;
     top: 50%;
     left: 50%;
