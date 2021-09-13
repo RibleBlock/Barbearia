@@ -8,14 +8,6 @@
     padding: 140px 0;
 }
 
-#services .container > h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.75rem;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-}
-
 #services .services-wrapper {
     margin-top: 100px;
     display: flex;
@@ -27,7 +19,7 @@
     position: relative;
     width: 400px;
     height: 500px;
-    border: 2px solid var(--black-soft);
+    border: 2px dotted var(--black-soft);
 }
 
 #services .service::before {
@@ -66,4 +58,27 @@
 
 #services .service:nth-child(2) {
     margin: 0 40px;
+}
+
+@media screen and (max-width: 1150px) {
+    #services .services-wrapper {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #services .service:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #services .service {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        border: 2px solid var(--black-soft);
+    }    
 }

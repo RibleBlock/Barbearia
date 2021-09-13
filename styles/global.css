@@ -31,30 +31,17 @@ main {
     padding: 0 2%;
 }
 
+.container > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
-#progressBarContainer {
-    position: fixed;
-    z-index: 999;
-    background: rgba(255, 255, 255, 0.05);
-}
 
-#progressBar {
-    position: absolute;
-    will-change: transform, opacity;
-    background: linear-gradient(to top, var(--orange-pattern), var(--black-pattern));
-    transform-origin: top center;
-    transform: scale(1, 0);
-    opacity: 0;
-}
-
-#progressBarContainer,
-#progressBar {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 10px;
-}
   

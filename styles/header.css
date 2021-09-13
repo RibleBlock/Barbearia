@@ -30,8 +30,35 @@ div.logo-wrapper .logo {
     background-position: center;
 }
 
+#menu-mobile {
+    display: none;
+    position: fixed;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/menu.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 ul#header-mobile {
     display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    background-color: rgba(0,0,0,0.85);
+    z-index: 999;
+    margin-top: 100px;
+}
+
+ul#header-mobile a {
+    padding: 20px;
+    color: var(--orange-pattern);
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 ul#header-desktop {
@@ -42,7 +69,7 @@ ul#header-desktop {
     align-items: center;
 }
 
-ul#header-desktop li {
+ul#header-desktop li, ul#header-mobile li {
     list-style-type: none;
 }
 
@@ -52,7 +79,7 @@ ul#header-desktop a {
     --distance: 30px;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #E3A662;
+    color: var(--orange-pattern);
     position: relative;
 }
 
@@ -91,5 +118,22 @@ ul#header-desktop a::after {
 }
 
 @media screen and (max-width: 700px) {
-    
+    header .container {
+        height: 100px;
+        background-color: rgba(0,0,0,0.85);
+    }
+
+    div.logo-wrapper .logo {
+        width: 90px;
+        padding-top: 90px;
+        background-image: url('../assets/img/minimalist.png');
+    }
+
+    ul#header-desktop {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
 }
