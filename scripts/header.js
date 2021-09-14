@@ -1,6 +1,6 @@
 let isApplied = false
 
-if(screen.width > 700) {
+if(screen.width > 1000) {
     window.addEventListener("scroll", () => {
         let top = this.scrollY;
         let header = document.querySelector("header .container");
@@ -97,21 +97,32 @@ if(screen.width > 700) {
             // *
         }
     });
-} else {
-    let menu = document.getElementById('menu-mobile');
-    let headerMobile = document.getElementById('header-mobile')
-
-    let isOpen = false
-
-    menu.addEventListener('click',el => {
-        if(isOpen) {
-            headerMobile.style.display = 'none'
-            isOpen = false
-        } else {
-            headerMobile.style.display = 'flex'
-            isOpen = true
-        }
-    })
-
-    
 }
+
+let menu = document.getElementById('menu-mobile');
+let headerMobile = document.getElementById('header-mobile')
+
+let isOpen = false
+
+menu.addEventListener('click',el => {
+    if(isOpen) {
+        headerMobile.style.display = 'none'
+        isOpen = false
+    } else {
+
+        headerMobile.style.display = 'flex'
+
+        let mobileAnim = headerMobile.animate([
+            {height: '10%'},
+            {height: '20%'},
+            {height: '50%'}
+        ], 300)
+
+        mobileAnim.addEventListener('finish',e => {
+            headerMobile.style.cssText += "height: 50%;";
+        })
+
+        
+        isOpen = true
+    }
+})

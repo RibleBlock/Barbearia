@@ -19,6 +19,13 @@
     margin-top: 100px;
 }
 
+#products #beard-product > h1, #products #hair-product > h1 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
 #products #beard-product {
     width: 50%;
     margin-right: 80px;
@@ -81,6 +88,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    #products {
+        padding: 80px 0;
+    }
+
     #products .products-wrapper {
         width: 100%;
         flex-direction: column;
@@ -93,6 +104,7 @@
 
     #products #hair-product {
         width: 70%;
+        margin-top: 30px;
         margin-right: 0;
     }
 

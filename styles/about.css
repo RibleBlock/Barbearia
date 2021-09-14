@@ -99,7 +99,11 @@
     font-weight: 600;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
+    #about {
+        padding: 80px 0;
+    }
+
     #about .container {
         flex-direction: column;
         justify-content: center;
